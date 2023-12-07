@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#magic8Ball {
+    text-align: center;
+}
+
+#userQuestion {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#askButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+}
+
+#eightBall {
+    margin-top: 20px;
+    background: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+#eightBall::before {
+    content: '8';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#answerContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+}
+
+#answer {
+    color: white;
+    text-align: center;
+    padding-top: 50px 50px 50px;
+    box-sizing: border-box;
+
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* ... [previous CSS styles] ... */
+
+/* ... [previous CSS styles] ... */
+
+.answerBall {
+    background: black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding-top: 50px;
+}
+
+.answerBall::before {
+    content: '';
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ... [previous CSS styles] ... */
+
+#askButton:active {
+    background-color: #8b0000; /* Muted red color when button is pressed */
+}
+/* ... [previous CSS styles] ... */
+
+#pageTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* ... [previous CSS styles] ... */
+
+/* ... [previous CSS styles] ... */
+
+/* ... [previous CSS styles] ... */
+
+
+
+/* ... [previous CSS styles] ... */
